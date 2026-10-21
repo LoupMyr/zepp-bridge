@@ -1,0 +1,57 @@
+{
+  "name": "zepp-bridge",
+  "version": "0.1.0",
+  "description": "Request/response messaging between a Zepp OS 2.x watch app and its side service",
+  "keywords": [
+    "zepp",
+    "zepp-os",
+    "amazfit",
+    "messaging",
+    "side-service",
+    "ble"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./device": {
+      "types": "./device.d.ts",
+      "default": "./device.js"
+    },
+    "./side": {
+      "types": "./side.d.ts",
+      "default": "./side.js"
+    },
+    "./polyfill": {
+      "types": "./polyfill.d.ts",
+      "default": "./polyfill.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "device.js",
+    "device.d.ts",
+    "side.js",
+    "side.d.ts",
+    "src",
+    "README.md",
+    "LICENSE",
+    "polyfill.js",
+    "polyfill.d.ts"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "es6-promise": "^4.2.8"
+  }
+}
